@@ -1,0 +1,186 @@
+#root {
+  display: flex;
+  flex-direction: column; /* Align children in a column to have the navbar at the top */
+  align-items: center; /* Center content horizontally */
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* testing */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the navbar content horizontally */
+  padding: 1rem 0;
+}
+
+.navbar-item {
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+
+.random-button,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center horizontally */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  color: black;
+}
+
+.homepage-container {
+  height: 35%;
+  /* background-image: url("images/Family-dinner.jpg"); */
+  background-size: cover;
+  color: rgb(68, 68, 68);
+  font-size: 50px;
+  font-weight: 700;
+  background-color: black;
+}
+
+.homepage-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.homepage-card-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-text {
+  font-size: 20px;
+  color: black;
+  font-weight: 900;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.homepage-text p {
+  font-size: 28px;
+  color: #734060;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.transparent-image {
+  opacity: 3;
+}
+
+.genieLamp {
+
+height: 80px;
+
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.random-button {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.random-meal-card {
+  background-color: #f2f2f2;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* this is the title for the meal cards */
+.random-meal-card h2,
+strong {
+  color: #734060;
+}
+
+.meal-card-intro {
+  display: flex;
+}
+
+.meal-image {
+  /* border: 2px dotted whitesmoke; */
+  min-width: 400px;
+  margin-top: 20px;
+}
+
+.meal-ingridients {
+  /* border: 2px dotted whitesmoke; */
+  min-width: 500px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.meal-instruction {
+  /* border: 2px dotted whitesmoke; */
+  min-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0px 30px 0px 30px;
+  text-align: left;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-form input {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #edb654;
+  font-size: 20px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #734060;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.search-form button:hover {
+  background-color: #644d25;
+}
