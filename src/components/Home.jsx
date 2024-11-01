@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import homepageImage from "../assets/family-dinner.png";
 import { useActionData } from "react-router-dom";
 import genieLamp from "../assets/genielamp.gif";
+import './Home.css'
 
 function Home() {
   React.useEffect(() => {

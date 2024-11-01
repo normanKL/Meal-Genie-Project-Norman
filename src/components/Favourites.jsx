@@ -2,6 +2,7 @@
 //testing
 
 import { useNavigate } from "react-router-dom";
+import './Favourites.css'
 
 function Favourites({ favourites, removeFav }) {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function Favourites({ favourites, removeFav }) {
   };
 
   return (
-    <div>
+    <div className="random-meal-section">
       <div className="random-button">
         <button className="button is-primary" onClick={() => handleBackButton()}>
           {" "}

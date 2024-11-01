@@ -4,6 +4,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './RandomMeal.css'
 
 function RandomMeal({ addFav }) {
   const [meal, setMeal] = useState(null);
@@ -68,54 +69,56 @@ function RandomMeal({ addFav }) {
 
   return (
     <>
-      <div className="random-button">
-        <button className="button is-primary" onClick={fetchRandomMeal}> Randomise </button>
-      </div>
-      {meal ? (
-        <div
-          className="random-meal-card"
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
-          <h2>{meal.strMeal}</h2>
-          <div className="meal-card-intro">
-            <section className="meal-image">
-              <img src={meal.strMealThumb} alt={meal.strMeal} width="200" />
-              <p>
-                <strong>Category:</strong> {meal.strCategory}
-              </p>
-              <p>
-                <strong>Area:</strong> {meal.strArea}
-              </p>
-            </section>
-            <section className="meal-ingridients">
-              <h3>Ingredients</h3>
-              <ul>{renderIngredients()}</ul>
-            </section>
-          </div>
-          <section className="meal-instruction">
-            <p>
-              <strong>Instructions:</strong> {meal.strInstructions}
-            </p>
-          </section>
-
-          {meal.strYoutube && (
-            <iframe
-              src={youtubeEmbedLink(meal.strYoutube)}
-              title={`${meal.strMeal} YouTube video`}
-              width={560}
-              height={315}></iframe>
-          )}
-          <br />
-          <br />
-          <button className="button is-primary"  onClick={() => handleFavouriteClick(meal)}>
-            {" "}
-            Add Favourite{" "}
-          </button>
+      <div className="random-meal-section">
+        <div className="random-button">
+          <button className="button is-primary" onClick={fetchRandomMeal}> Randomise </button>
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+        {meal ? (
+          <div
+            className="random-meal-card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500">
+            <h2>{meal.strMeal}</h2>
+            <div className="meal-card-intro">
+              <section className="meal-image">
+                <img src={meal.strMealThumb} alt={meal.strMeal} width="200" />
+                <p>
+                  <strong>Category:</strong> {meal.strCategory}
+                </p>
+                <p>
+                  <strong>Area:</strong> {meal.strArea}
+                </p>
+              </section>
+              <section className="meal-ingridients">
+                <h3>Ingredients</h3>
+                <ul>{renderIngredients()}</ul>
+              </section>
+            </div>
+            <section className="meal-instruction">
+              <p>
+                <strong>Instructions:</strong> {meal.strInstructions}
+              </p>
+            </section>
+
+            {meal.strYoutube && (
+              <iframe
+                src={youtubeEmbedLink(meal.strYoutube)}
+                title={`${meal.strMeal} YouTube video`}
+                width={560}
+                height={315}></iframe>
+            )}
+            <br />
+            <br />
+            <button className="button is-primary" onClick={() => handleFavouriteClick(meal)}>
+              {" "}
+              Add Favourite{" "}
+            </button>
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
     </>
   );
 }

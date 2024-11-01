@@ -1,0 +1,21 @@
+@media (max-width: 1100px) {
+    .random-meal-section {
+        transform: scale(0.80);
+        transform-origin: top;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .random-meal-section {
+        transform: scale(0.70);
+        transform-origin: top;
+    }
+}
+
+@media (max-width: 450px) {
+    .random-meal-section {
+        transform: scale(0.60);
+        transform-origin: top;
+    }
+}

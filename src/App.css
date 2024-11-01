@@ -26,13 +26,7 @@ header {
   padding: 1rem 0;
 }
 
-.navbar-item {
-  /* border: 2px solid white; */
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  margin: 0px 20px 0px 20px;
-  cursor: pointer;
-}
+
 
 .random-button,
 button {
@@ -54,7 +48,6 @@ strong {
 
 .homepage-container {
   height: 35%;
-  /* background-image: url("images/Family-dinner.jpg"); */
   background-size: cover;
   color: rgb(68, 68, 68);
   font-size: 50px;
@@ -184,3 +177,4 @@ strong {
 .search-form button:hover {
   background-color: #644d25;
 }
+

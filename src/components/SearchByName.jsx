@@ -4,6 +4,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './SearchByName.css'
 
 function SearchByName({ addFav }) {
   const [searchMeal, setSearchMeal] = useState("");
@@ -66,6 +67,7 @@ function SearchByName({ addFav }) {
 
   return (
     <>
+      <div className="random-meal-section">
       <form onSubmit={handleSearch} className="search-form">
         <input
           type="text"
@@ -114,6 +116,7 @@ function SearchByName({ addFav }) {
             </button>
           </div>
         ))}
+      </div>
       </div>
     </>
   );
